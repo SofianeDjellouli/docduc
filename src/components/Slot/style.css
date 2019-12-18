@@ -1,0 +1,21 @@
+.right {
+	margin-right: 10px;
+}
+
+.slot__summary {
+	margin-top: 6px;
+	padding-left: 6px;
+	border-left: 2px solid #d9d9d9;
+}
+.slot__interval--invalid {
+	color: red;
+}
+.slot__error {
+	display: block;
+	color: red;
+}
+
+.slide-buttons {
+	overflow-x: hidden;
+	padding-bottom: 5px;
+}

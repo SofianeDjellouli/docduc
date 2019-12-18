@@ -1,0 +1,12 @@
+.space {
+	width: 50px;
+}
+.payment-method h4 {
+	width: 100%;
+}
+.payment-method label {
+	color: inherit !important;
+}
+.payment-method button {
+	align-self: flex-end;
+}

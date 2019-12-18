@@ -1,0 +1,12 @@
+.services-tooltip {
+	padding: 10px 6px;
+}
+
+.services-tooltip hr {
+	margin: 5px 0;
+}
+
+.services-tooltip .title-modal {
+	font-size: 1em;
+	margin-top: 0 !important;
+}

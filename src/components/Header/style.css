@@ -1,0 +1,96 @@
+header {
+	margin-bottom: 59px;
+}
+#fixed-header {
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	padding: 0;
+	width: 100%;
+	background: var(--docduc-primary);
+	height: 59px;
+}
+@media (min-width: 768px) {
+	header {
+		margin-bottom: 84px;
+	}
+	#fixed-header {
+		height: 84px;
+		padding: 0;
+		background: var(--docduc-primary);
+		transition: background 0.3s ease-in-out, padding 0.3s ease-in-out;
+	}
+}
+#fixed-header .container {
+	justify-content: flex-end;
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+#fixed-header .container > a {
+	height: 38px;
+	margin-right: auto;
+	cursor: pointer;
+}
+#fixed-header button {
+	display: block;
+}
+#fixed-header .container .fa-bars {
+	color: white;
+}
+#fixed-header .icon-button {
+	height: 100%;
+	background: transparent;
+	outline: none;
+	border-top: 4px solid transparent;
+	border-bottom: 4px solid transparent;
+	border-left: none;
+	border-right: none;
+	cursor: pointer;
+	position: relative;
+}
+#fixed-header .container > i,
+#fixed-header .icon-button > i {
+	padding: 0 16px;
+	color: var(--docduc-secondary);
+	font-size: 24px;
+	cursor: pointer;
+}
+#fixed-header .icon-button:hover {
+	border-bottom-color: var(--docduc-secondary);
+}
+#fixed-header .softo-solid-btn {
+	margin: 0 10px;
+}
+
+.menu-wrapper img {
+	border-radius: 24px;
+	border: 2px solid transparent;
+	cursor: pointer;
+}
+.menu-wrapper img:hover {
+	border-color: var(--docduc-primary-dark);
+}
+
+.menu-wrapper {
+	margin-left: 10px;
+}
+.MuiListItemIcon-root,
+.MuiMenu-list {
+	color: var(--docduc-primary) !important;
+}
+.softo-btn-outline {
+	background-color: transparent !important;
+	color: white !important;
+}
+.softo-btn-outline:hover {
+	background-color: var(--docduc-secondary) !important;
+	color: black !important;
+}
+.end-right {
+	margin-right: 0px !important;
+}
+
+.header-menu i {
+	font-size: 24px;
+}

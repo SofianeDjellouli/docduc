@@ -1,0 +1,9 @@
+@media (max-width: 768px) {
+	.slot {
+		padding: 5px;
+	}
+	.column {
+		width: 65px;
+		font-size: 0.9em;
+	}
+}

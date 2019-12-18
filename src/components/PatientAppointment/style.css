@@ -1,0 +1,32 @@
+.appointment-modal .MuiDialog-paperScrollPaper {
+  height: 100%;
+  width: 100%;
+}
+.doctor {
+  display: flex;
+  margin-bottom: 6px;
+  align-items: center;
+}
+.doctor img {
+  display: flex;
+  border: 1px solid lightgray;
+  border-radius: 38px;
+  margin-bottom: 6px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.doctor .user-name {
+  font-weight: 600;
+  font-size: 1.1em;
+}
+.chips-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.left {
+  margin-left: 10px;
+}
+.preview {
+  max-width: 250px;
+  max-height: 250px;
+}

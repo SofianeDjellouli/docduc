@@ -1,0 +1,115 @@
+.search {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	overflow: hidden;
+}
+.search-form-wrapper {
+	padding: 10px 20px;
+	position: relative;
+	z-index: 2;
+}
+.search-form-wrapper,
+.search-form {
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+.search-form {
+	border: 1px solid lightgray;
+	border-radius: 5px;
+}
+.search-form > div {
+	padding: 0 10px;
+}
+.search-form > div > div {
+	display: flex;
+	align-items: center;
+}
+
+.search-form .autocomplete {
+	margin: 10px;
+	flex: 1;
+}
+.search-form input {
+	border: none;
+}
+.fa-location-arrow {
+	cursor: pointer;
+}
+.search-form button {
+	outline: none;
+	height: 42px;
+	width: 42px;
+	font-weight: 500;
+	border-radius: 0px 3px 3px 0px;
+	border: none;
+	background: var(--docduc-secondary);
+}
+.day-picker * {
+	font-size: 1em !important;
+}
+[placeholder="Date"] {
+	width: 87px;
+	outline: none;
+}
+[placeholder="Date"]::placeholder {
+	color: #333;
+	opacity: 1;
+}
+.filter-wrapper > i {
+	position: absolute;
+	top: 9px;
+	right: 10px;
+	cursor: pointer;
+}
+.filters {
+	margin-top: 10px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.custom-label {
+	font-family: Montserrat !important;
+	font-size: 1em !important;
+}
+.care-team {
+	border-color: rgb(0, 132, 137);
+}
+.care-team-active {
+	background: rgb(0, 132, 137);
+	color: white;
+}
+.care-team-active:hover {
+	background: rgb(0, 108, 112);
+	border-color: rgb(0, 108, 112);
+}
+.components-wrapper {
+	display: flex;
+	/*height: calc(100vh - 232px);*/
+	max-height: calc(100vh - 200px);
+	position: relative;
+	flex: 1;
+}
+.softo-solid-btn {
+	font-weight: 500;
+}
+
+.switcher {
+	position: absolute;
+	width: 98px;
+	bottom: 10px;
+	z-index: 2;
+	cursor: pointer;
+}
+.switcher .fas {
+	margin-left: 10px;
+}
+.dialog-title button {
+	float: right;
+}
+
+.filter,
+::placeholder {
+	overflow-x: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}

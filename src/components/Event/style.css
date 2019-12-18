@@ -1,0 +1,55 @@
+.doctor-calendar .event {
+  font-size: 0.8em;
+  white-space: nowrap;
+  overflow-x: hidden;
+  cursor: pointer;
+  position: relative;
+}
+.rbc-agenda-event-cell .event {
+  position: initial !important;
+}
+.event__button {
+  background: transparent;
+  -webkit-appearance: none;
+  border: 0;
+  box-shadow: none;
+}
+.event__button:hover {
+  opacity: 0.8;
+}
+.doctor-calendar .event i,
+.doctor-calendar .event-tooltip i {
+  margin-right: 10px;
+}
+.event-tooltip-title {
+  text-align: center;
+}
+.event-tooltip {
+  max-width: 200px;
+}
+.event-tooltip hr {
+  margin: 5px 0;
+}
+.event-tooltip-card {
+  padding: 10px;
+}
+.event-tooltip img {
+  margin-right: 10px;
+  border-radius: 25px;
+  border: 1px solid lightgray;
+}
+
+.doctor-calendar .event .warning-dot {
+  background: var(--docduc-secondary);
+}
+.rbc-month-view .warning-dot {
+  top: 3px;
+  right: 3px;
+}
+.rbc-agenda-view .warning-dot {
+  top: 5px;
+  right: -14px;
+}
+.appointment-canceled-title {
+  font-weight: 600;
+}

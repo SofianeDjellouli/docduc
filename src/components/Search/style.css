@@ -1,0 +1,46 @@
+.booking-dialog {
+	width: 600px;
+}
+.booking-dialog .dialog-title button {
+	position: absolute;
+	right: 24px;
+}
+
+::placeholder {
+	color: gray;
+}
+
+.dialog-title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 1.5em;
+	font-weight: 600;
+}
+.dialog-title > div {
+	flex: 1;
+	text-align: center;
+}
+.booking-dialog .doctor {
+	align-items: center;
+	flex-direction: initial;
+	max-width: initial;
+	height: auto;
+	min-height: auto;
+}
+.booking-dialog .doctor img {
+	border-radius: 50px;
+	margin: 10px;
+	border: 1px solid lightgray;
+	cursor: initial;
+}
+.booking-dialog .doctor-id > div:first-child {
+	font-weight: 500;
+	font-size: 1.1em;
+	color: var(--docduc-primary);
+	cursor: initial;
+}
+
+.booking-dialog .doctor-id > div {
+	margin: 10px;
+}

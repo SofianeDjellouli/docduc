@@ -1,0 +1,67 @@
+.autocomplete {
+	position: relative;
+	width: 100%;
+}
+.autocomplete > div:first-child {
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+.autocomplete .fas {
+	position: absolute;
+	right: 10px;
+}
+.autocomplete input {
+	outline: none;
+	width: 100%;
+	flex: 1;
+}
+
+.suggestions {
+	background: white;
+	max-height: 250px;
+	overflow-y: auto;
+	width: 100%;
+	z-index: 3;
+	border: 1px solid lightgray;
+	border-radius: 0 0 5px 5px;
+	position: absolute;
+}
+
+.suggestions .type,
+.suggestions .suggestion {
+	padding: 5px 10px;
+}
+.suggestions .type {
+	font-weight: 500;
+	background: lavender;
+	position: sticky;
+	top: 0;
+}
+.suggestion {
+	cursor: pointer;
+}
+.flex {
+	display: flex;
+	align-items: center;
+}
+.suggestion img {
+	border-radius: 30px;
+	border: 1px solid lightgray;
+	margin-right: 10px;
+	object-fit: cover;
+	object-position: top;
+}
+.suggestion-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	min-height: 45px;
+	min-width: 0;
+}
+.suggestion-title {
+	font-weight: 500;
+}
+.suggestion-subtitle {
+	font-size: 0.9em;
+}

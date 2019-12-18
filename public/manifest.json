@@ -1,0 +1,25 @@
+{
+  "short_name": "Docduc",
+  "name": "Docduc",
+  "icons": [
+    {
+      "src": "/img/favicon150.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/img/favicon192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/img/square_logo.jpg",
+      "type": "image/jpg",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#185a9d",
+  "background_color": "#ffffff"
+}
