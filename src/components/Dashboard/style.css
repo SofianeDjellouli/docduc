@@ -1,9 +1,0 @@
-.dashboard {
-	flex: 1;
-	padding: 0 15px;
-	display: flex;
-}
-.dashboard select {
-	display: flex;
-	margin: auto;
-}
