@@ -1,0 +1,60 @@
+.slot-picker-wrapper {
+	display: inline-block;
+}
+.slot-picker-popup {
+	border: 1px solid lightgray;
+	padding: 10px;
+	border-radius: 5px;
+}
+.slot-picker {
+	display: flex;
+	align-items: flex-start;
+}
+.slot-picker .MuiButtonBase-root {
+	padding: 0;
+}
+.slot-picker .MuiButtonBase-root.Mui-disabled i {
+	color: inherit;
+}
+.column {
+	text-align: center;
+	width: 100px;
+}
+.column.head > div:first-child {
+	font-weight: 500;
+}
+.slots-wrapper {
+	display: flex;
+	position: relative;
+	min-height: 170px;
+}
+.slot {
+	padding: 10px;
+	margin: 5px;
+	height: 37px;
+	box-sizing: border-box;
+}
+.free {
+	cursor: pointer;
+	border-radius: 3px;
+	background: lightgray;
+	font-weight: 500;
+	font-size: 0.9em;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.free:hover {
+	/*box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);*/
+	background: var(--docduc-secondary);
+	color: var(--docduc-primary);
+}
+.see-more-wrapper {
+	display: flex;
+}
+.see-more {
+	padding: 3px 7px !important;
+	font-size: 0.9em;
+	margin: 5px auto;
+}

@@ -1,0 +1,29 @@
+.MuiDialogTitle-root h2 {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.title-modal {
+	font-weight: 600;
+	margin-bottom: 5px;
+	font-size: 1.3em;
+}
+.title-modal:not(:first-child) {
+	margin-top: 20px;
+}
+.subtitle-modal {
+	font-weight: 500;
+	margin-bottom: 5px;
+	font-size: 1.1em;
+}
+
+@media only screen and (min-height: 900px) {
+	.MuiDialog-paperScrollPaper {
+		max-height: 800px !important;
+	}
+}
+@media only screen and (max-height: 900px) {
+	.MuiDialog-paperScrollPaper {
+		max-height: calc(100% - 40px) !important;
+	}
+}

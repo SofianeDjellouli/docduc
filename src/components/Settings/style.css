@@ -1,0 +1,320 @@
+.settings h6 {
+	font-size: 18px;
+	line-height: 23px;
+	font-weight: 600;
+}
+
+.settings h4 {
+	font-size: 1.8em;
+	font-weight: 600;
+	margin: 20px 0;
+	color: var(--docduc-primary);
+}
+.settings input.form-input,
+.settings textarea.form-input {
+	background-color: #f7f7f7 !important;
+}
+
+.planPrice {
+	font-size: 32px;
+	font-weight: 500;
+	color: var(--teflon);
+	position: relative;
+	text-align: center;
+}
+
+.planPrice::before {
+	content: "$";
+	line-height: 19px;
+	font-size: 16px;
+	color: #554d56;
+	vertical-align: top;
+}
+
+.planPrice::after {
+	content: attr(data-fr);
+	position: absolute;
+	font-size: 18px;
+	line-height: 21px;
+	top: -2px;
+}
+
+.planPeriod {
+	line-height: 19px;
+	font-size: 16px;
+	text-align: left;
+	color: var(--teflon);
+	align-self: flex-end;
+}
+
+.pricing-single {
+	text-align: center;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
+	border-radius: 4px;
+	transition: all 0.3s ease-in;
+	background: #fff;
+}
+
+.pricing-single .pricing-single-header {
+	padding: 20px 0px;
+}
+
+.pricing-single .pricing-single-header h3 {
+	font-size: 25px;
+	margin-bottom: 0;
+}
+
+.pricing-single .pricing-single-header span {
+	display: block;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+.pricing-single .pricing-single-content {
+	padding: 20px 20px;
+}
+
+.pricing-single .pricing-single-content .price-icon-sign {
+	position: relative;
+	top: -30px;
+	font-size: 20px;
+}
+
+.pricing-single .pricing-single-content .main-price {
+	font-size: 70px;
+	font-weight: 400;
+	line-height: 0.5;
+	letter-spacing: -3px;
+}
+
+.pricing-single .pricing-single-content .sub-price {
+	font-size: 30px;
+	font-weight: 400;
+}
+
+.pricing-single .pricing-single-content .main-price-info {
+	position: relative;
+	display: block;
+	letter-spacing: 1px;
+}
+
+.pricing-single .pricing-single-content .main-price-info:before {
+	font-size: 22px;
+	font-weight: 300;
+	margin-right: 3px;
+}
+
+.pricing-single:hover {
+	box-shadow: 1.563px 8.863px 20px 0 rgba(0, 0, 0, 0.13);
+	transform: translate(0, -5px);
+}
+
+/*switcher*/
+.nav-center .nav-tabs > li > div {
+	color: var(--docduc-primary);
+	font-size: 20px;
+	line-height: 20px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 8px;
+}
+
+.center-block .nav-tabs > li.active > div,
+.center-block .nav > li > div:not(.account-status):hover {
+	color: #fff;
+	background-color: var(--docduc-primary);
+}
+
+.center-block > .nav-tabs > li > div:not(.account-status) {
+	cursor: pointer;
+}
+.center-block > .nav-tabs > li > div {
+	margin-right: 0;
+	border-radius: 4px;
+	border: none;
+	padding: 12px 15px;
+	color: var(--docduc-primary);
+	font-size: 14px;
+	line-height: 15px;
+	display: inline-flex;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	/*font-family: Roboto, Helvetica, sans-serif;*/
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.center-block {
+	text-align: center;
+	margin: 15px 0;
+}
+
+.center-block .nav-tabs {
+	border-bottom: none;
+}
+
+.center-block ul.nav {
+	display: inline-block;
+}
+
+.center-block ul.nav li {
+	display: inline-block;
+}
+
+.center-block .nav-tabs > li {
+	margin-right: 4px;
+}
+
+.center-block div:not(.account-status) {
+	cursor: pointer !important;
+}
+
+.search-card .card-title {
+	margin-bottom: 24px;
+}
+
+#form-location-display .fas {
+	color: var(--docduc-primary-dark);
+	margin-right: 16px;
+}
+
+span.input-group-addon {
+	border: none !important;
+	border-color: none !important;
+	color: var(--docduc-primary-dark) !important;
+}
+
+.location-text {
+	font-size: 16px;
+	line-height: 18px;
+	background: transparent;
+	border: 0px solid transparent;
+}
+
+@media (min-width: 1300px) {
+	.search-card {
+		min-width: 440px;
+		padding-left: 24px;
+		padding-right: 24px;
+		padding-top: 24px;
+		padding-bottom: 16px;
+	}
+
+	.search-card .row {
+		min-width: 408px;
+	}
+}
+
+.search-card #form-location-display {
+	margin-top: 12px;
+}
+
+/*.settings h1 {
+	font-weight: 500 !important;
+	font-size: 36px !important;
+	text-align: center;
+}*/
+
+.field {
+	flex: 1;
+	padding: 0 15px;
+	font-weight: 400;
+	color: #31325f;
+	outline: none;
+	cursor: text;
+	border: none;
+}
+
+.settings fieldset {
+	margin-bottom: 20px;
+	background: #fff;
+	box-shadow: 0 1px 3px 0 rgba(50, 50, 93, 0.15), 0 4px 6px 0 rgba(112, 157, 199, 0.15);
+	border-radius: 4px;
+	border: none;
+	width: 100%;
+}
+
+.settings fieldset label {
+	width: 535px;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	height: 50px;
+	padding: 10px 0;
+	align-items: center;
+	justify-content: center;
+	color: #8898aa;
+	font-weight: 400;
+	font-size: 15px;
+}
+
+.settings fieldset label:not(:last-child) {
+	border-bottom: 1px solid #f0f5fa;
+}
+
+.settings fieldset label.state {
+	display: inline-flex;
+	width: 75%;
+}
+
+.settings fieldset:not(.with-state) label.state {
+	display: none;
+}
+
+.settings fieldset label.zip {
+	display: inline-flex;
+	width: 25%;
+	padding-right: 90px;
+}
+
+.settings fieldset:not(.with-state) label.zip {
+	width: 100%;
+}
+
+.settings fieldset label span:not(.DayPicker-NavButton) {
+	min-width: 125px;
+	padding: 0 15px;
+	text-align: right;
+	font-size: 15px;
+}
+
+.settings fieldset .redirect label span {
+	width: 100%;
+	text-align: center;
+}
+
+.autocomplete-dropdown-container {
+	border-radius: 2px;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.DayPicker-wrapper {
+	font-size: 14px;
+}
+
+.settings fieldset select {
+	color: #31325f;
+	border: none;
+	outline: none;
+}
+
+.booking-fee {
+	display: flex;
+	align-items: center;
+}
+.booking-fee input {
+	margin-left: 10px;
+}
+.MuiDialogContent-root .col-xs-12 {
+	margin-bottom: 30px;
+}
+.settings .container {
+	margin-top: 20px !important;
+	margin-bottom: 50px !important;
+	max-width: 100%;
+}

@@ -1,0 +1,66 @@
+.practice-map-wrapper {
+	cursor: initial;
+}
+.practice-map-wrapper > i {
+	font-size: 40px;
+	cursor: pointer;
+}
+.practice-map-card-wrapper {
+	position: absolute;
+	z-index: 1;
+	bottom: 51px;
+	left: -85px;
+}
+.practice-map-card {
+	font-family: Montserrat;
+	background: white;
+	border-radius: 8px;
+	font-size: 12px;
+	width: 200px;
+	box-shadow: 0 2px 7px 1px rgba(0, 0, 0, 0.3);
+	text-align: center;
+}
+
+.buttons-handler {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-weight: 500;
+	font-size: 1.1em;
+}
+.buttons-handler > div {
+	flex: 1;
+	text-align: center;
+	cursor: pointer;
+}
+.buttons-handler > div:hover {
+	text-decoration: underline;
+}
+.buttons-handler i {
+	color: inherit !important;
+}
+.practice-map-card > div {
+	padding: 5px;
+}
+.pointer {
+	cursor: pointer;
+}
+.practice-map-card-wrapper > span {
+	width: 48px;
+	bottom: 0;
+	height: 1em;
+	margin-bottom: -0.95em;
+	position: absolute;
+	font-size: 6px;
+	left: 76px;
+}
+.practice-map-card-wrapper > span::before {
+	border-color: white transparent transparent transparent;
+	border-width: 2em 2em 0 2em;
+	width: 0;
+	height: 0;
+	margin: auto;
+	content: "";
+	display: block;
+	border-style: solid;
+}

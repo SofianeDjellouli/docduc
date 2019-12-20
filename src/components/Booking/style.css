@@ -1,0 +1,115 @@
+.booking .fa-spin {
+	top: 35px;
+}
+.appointment {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.appointment > div:first-child > div {
+	margin: 5px;
+}
+.booking {
+	position: relative;
+}
+.booking input,
+.booking textarea,
+.booking label,
+.booking .files {
+	border-radius: 3px;
+	border: 1px solid lightgray;
+	padding: 10px;
+	outline: none;
+}
+.booking input:not(#files),
+.booking textarea,
+.booking label,
+.booking .files {
+	margin-top: 20px;
+	background: #f7f7f7f7;
+	margin-bottom: 0;
+}
+.booking button.softo-solid-btn {
+	margin: 20px 0;
+}
+.booking textarea {
+	resize: vertical;
+	min-height: 50px;
+	margin-bottom: -5px;
+	width: 100%;
+}
+.booking label {
+	position: relative;
+	cursor: pointer;
+	font-weight: initial;
+	color: gray;
+}
+#files {
+	opacity: 0;
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	font-size: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.files {
+	scrollbar-width: thin;
+	scrollbar-color: rgba(0, 0, 0, 0.25) transparent;
+	overflow-y: auto;
+	max-height: 200px;
+}
+.files::-webkit-scrollbar {
+	-webkit-appearance: none;
+	width: 7px;
+}
+.files::-webkit-scrollbar-thumb {
+	border-radius: 4px;
+	background-color: rgba(0, 0, 0, 0.25);
+	-webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
+.files > div {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 2px;
+}
+.files i {
+	cursor: pointer;
+}
+.symptoms-list {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.flex-center {
+	display: flex;
+	justify-content: center;
+}
+.booking .price {
+	width: 50%;
+	margin: 0 auto;
+}
+.booking .price > div {
+	display: flex;
+	justify-content: space-between;
+}
+.booking .price > div:nth-child(4) {
+	font-weight: 500;
+}
+.booking .price-title {
+	text-align: center;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+.no-margin {
+	margin: 5px 0;
+}
+.chip {
+	margin: 5px;
+}
+.booking .price i {
+	cursor: pointer;
+	margin-left: 10px;
+}

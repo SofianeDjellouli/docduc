@@ -1,0 +1,21 @@
+.form-input {
+	border-radius: 3px;
+	border: 1px solid #d3d3d3 !important;
+	padding: 10px !important;
+	outline: none;
+	background: #fff !important;
+	margin-bottom: 0 !important;
+	font-size: 1em !important;
+	width: 100%;
+	box-sizing: border-box;
+	font-family: Montserrat !important;
+}
+.form-label {
+	margin: 10px 0;
+	opacity: 0.5;
+}
+.required {
+	position: absolute;
+	left: -10px;
+	line-height: 48px;
+}

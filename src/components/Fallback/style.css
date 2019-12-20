@@ -1,0 +1,6 @@
+.suspense {
+	height: calc(100vh);
+	width: calc(100vw);
+	display: flex;
+	justify-content: center;
+}

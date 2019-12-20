@@ -1,0 +1,127 @@
+.doctor-dialog {
+	height: 95vh;
+	width: 95vw;
+	max-height: none !important;
+	max-width: none !important;
+	margin: 0 !important;
+}
+.close-button {
+	position: absolute !important;
+	right: 5px;
+	top: 5px;
+	padding: 5px !important;
+}
+.dialog-profile {
+	padding: 40px 30px 20px !important;
+	display: flex;
+	outline: none;
+	height: 100%;
+}
+.profile-wrapper {
+	flex: 1;
+	position: relative;
+}
+.profile {
+	padding-right: 20px;
+	height: 100%;
+}
+.profile,
+.booking-wrapper,
+.profile .insurances {
+	scrollbar-width: thin;
+	scrollbar-color: rgba(0, 0, 0, 0.25) transparent;
+	overflow-y: auto;
+}
+.profile::-webkit-scrollbar,
+.booking-wrapper::-webkit-scrollbar,
+.profile .insurances::-webkit-scrollbar {
+	-webkit-appearance: none;
+	width: 7px;
+}
+.profile::-webkit-scrollbar-thumb,
+.booking-wrapper::-webkit-scrollbar-thumb,
+.profile .insurances::-webkit-scrollbar-thumb {
+	border-radius: 4px;
+	background-color: rgba(0, 0, 0, 0.25);
+	-webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
+.profile .card img,
+.profile .review img {
+	object-fit: cover;
+	object-position: top;
+	border-radius: 100px;
+	border: 1px solid lightgray;
+}
+.profile > div,
+.profile .card > div {
+	margin: 5px 0;
+}
+.title {
+	font-size: 1.2em;
+	font-weight: 600;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+.profile .card {
+	text-align: center;
+}
+.profile .card .fa-user-plus,
+.profile .card .fa-user-minus {
+	float: right;
+	font-size: 1.4em;
+}
+.profile .name {
+	font-size: 2em;
+	font-weight: 500;
+}
+
+.profile .rate {
+	font-size: 1.2em;
+}
+.profile .specialties {
+	color: gray;
+}
+.profile .add-to-team {
+	color: var(--docduc-primary);
+	font-weight: 500;
+	cursor: pointer;
+	display: inline-block;
+	border-bottom: 1px solid transparent;
+}
+.profile .add-to-team:hover {
+	border-color: var(--docduc-primary);
+}
+.profile input {
+	border-radius: 3px;
+	border: 1px solid lightgray;
+	padding: 10px;
+	outline: none;
+	width: 100%;
+	background: #f7f7f7f7;
+}
+.profile .insurances {
+	height: 100px;
+}
+.profile .practice {
+	display: flex;
+	align-items: center;
+}
+.profile hr {
+	border-top-width: 2px;
+}
+.booking-wrapper {
+	box-sizing: content-box;
+	background: white;
+	border: 1px solid lightgray;
+	border-radius: 5px;
+	padding: 20px;
+	overflow-y: auto;
+	box-shadow: rgba(0, 0, 0, 0.12) 0 0 12px;
+	align-self: flex-start;
+	max-height: 100%;
+}
+.booking-wrapper .title {
+	font-size: 1.5em;
+	text-align: center;
+}

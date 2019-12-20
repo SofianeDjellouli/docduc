@@ -1,0 +1,19 @@
+.empty-chat {
+	display: flex;
+	flex-direction: column;
+	background: #ecedf0;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.empty-chat > div {
+	font-size: 25px;
+	line-height: 33px;
+	font-weight: 600;
+	margin: 20px 0;
+	color: var(--docduc-primary);
+}
+.empty-chat > img {
+	margin: 0 auto;
+}

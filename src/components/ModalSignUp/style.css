@@ -1,0 +1,8 @@
+.sign-up-modal .MuiDialogContent-root {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.sign-up-modal a {
+	margin: 10px;
+}

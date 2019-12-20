@@ -1,0 +1,16 @@
+.warning-new {
+	position: absolute;
+	width: 10px;
+	right: 19px;
+	top: 21px;
+	height: 10px;
+	border-radius: 5px;
+	background-color: var(--docduc-secondary);
+}
+.MuiListItemIcon-root span {
+	display: inherit;
+}
+.MuiListItemIcon-root .warning-new {
+	top: -2px;
+	left: 17px;
+}

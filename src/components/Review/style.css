@@ -1,0 +1,10 @@
+.review-modal .fa-star {
+	cursor: pointer;
+	font-size: 2em;
+}
+.review-modal .MuiDialog-paper {
+	width: 500px;
+}
+.review-modal .rate {
+	margin-bottom: 20px;
+}

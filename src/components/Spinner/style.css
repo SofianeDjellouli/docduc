@@ -1,0 +1,12 @@
+.spinner-wrapper {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.spinner-wrapper > img {
+	z-index: 1;
+}
