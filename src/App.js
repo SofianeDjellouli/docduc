@@ -9,7 +9,10 @@ import {
 	defaultHeaderProps,
 	useToggle,
 	getId,
-	routes as _routes
+	handleOneSignal,
+	routes as _routes,
+	isDev,
+	DEFAULT_ERROR
 } from "./utils";
 import "./style.css";
 
@@ -19,7 +22,8 @@ const App = _ => {
 		[headerProps, setHeaderProps] = useState(defaultHeaderProps()),
 		resetHeader = useCallback(_ => setHeaderProps(defaultHeaderProps()), []),
 		closeSnackbar = useCallback(_ => setSnackbar(({ type }) => ({ message: "", type })), []),
-		routes = useRoutes(_routes);
+		routes = useRoutes(_routes),
+		isUser = getId();
 
 	useEffect(
 		_ => {
@@ -33,7 +37,7 @@ const App = _ => {
 		[toggleLoad.toggle]
 	);
 
-	/*	useEffect(_ => {
+	useEffect(_ => {
 		class SubPromise extends Promise {
 			constructor(executor) {
 				super((resolve, reject) =>
@@ -53,11 +57,18 @@ const App = _ => {
 			}
 		}
 		window.Promise = SubPromise;
-	}, []);*/
+	}, []);
+
+	useEffect(
+		_ => {
+			if (isUser) handleOneSignal();
+		},
+		[isUser]
+	);
 
 	return toggleLoad.toggled ? (
 		<Fragment>
-			<Header {...headerProps} key={getId()} />
+			<Header {...headerProps} key={isUser} />
 			<GlobalContext.Provider value={{ setSnackbar, setHeaderProps, resetHeader }}>
 				<Suspense {...{ fallback }}>
 					<DatePickerContext {...{ utils }}>{routes}</DatePickerContext>

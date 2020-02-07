@@ -127,7 +127,7 @@ export const handleLocalData = ({
 	if (image) localStorage.setItem("picture", image);
 	if ([1, 6].includes(userType)) {
 		localStorage.setItem("gender", gender);
-		handleNotifications();
+		handleOneSignal();
 	}
 };
 
@@ -406,7 +406,7 @@ export const initBranch = _ => {
 	if (!window.branch) branch.init(BRANCH_KEY);
 };
 
-export function handleNotifications() {
+export function handleOneSignal() {
 	loadScript("https://cdn.onesignal.com/sdks/OneSignalSDK.js", window.OneSignal).then(_ => {
 		let OneSignal = window.OneSignal || [];
 		OneSignal.push(function() {
@@ -414,7 +414,6 @@ export function handleNotifications() {
 			const handleChatTags = () => {
 					if (document.visibilityState === "visible")
 						OneSignal.getTags().then(e => {
-							console.log("getTags");
 							if (typeof e === "object") {
 								const { pathname } = window.location;
 								if (
@@ -443,7 +442,8 @@ export function handleNotifications() {
 				notifyButton: { enable: true, position: "bottom-left" },
 				persistNotification: false,
 				showCredit: false,
-				welcomeNotification: { disable: true }
+				welcomeNotification: { disable: true },
+				allowLocalhostAsSecureOrigin: true
 			});
 			// subscribe();
 			OneSignal.on("subscriptionChange", subscribed => (subscribed ? subscribe() : unsubscribe()));

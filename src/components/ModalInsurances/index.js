@@ -37,8 +37,8 @@ const _ModalInsurances = ({ insurances, addInsurance, onRemove, onClose, ...prop
 				}
 			}) => addInsurance(filteredSuggestions[i]),
 			[filteredSuggestions, addInsurance]
-		);
-	const filteredSuggestionsLength = filteredSuggestions.length > 0;
+		),
+		filteredSuggestionsLength = filteredSuggestions.length > 0;
 	return (
 		<Modal maxWidth="md" title="Add your accepted insurances" {...{ ...props, onClose, classes }}>
 			<Grid container spacing={2}>

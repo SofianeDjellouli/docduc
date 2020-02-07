@@ -203,9 +203,11 @@ class Search extends Component {
       !end &&
       !isCareTeam
     )
-      this.thenState(({ params: { pg, ...rest } }) => ({
-        params: { pg: pg + 1, ...rest }
-      })).then(_ => this.handleSearch(ADD_PAGE));
+      this.thenState(({ doctors, params: { pg, ...rest } }) => {
+        for (let i = 0; i < doctors.length; i++)
+          if (doctors[i].marker) doctors[i].marker.setMap(null);
+        return { params: { pg: pg + 1, ...rest } };
+      }).then(_ => this.handleSearch(ADD_PAGE));
   });
 
   render() {
